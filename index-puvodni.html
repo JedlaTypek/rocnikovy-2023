@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title>Film web</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styly.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" aria-current="page"
+                >Home <span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Dropdown</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="bg-primary p-5 text-center">
+      <h1 class="display-1 text-white">FilmWeb</h1>
+    </header>
+    <main>
+      <section id="novinky">
+        <div
+          id="carouselId"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="First slide"
+            ></li>
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="1"
+              aria-label="Second slide"
+            ></li>
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="2"
+              aria-label="Third slide"
+            ></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+                src="https://picsum.photos/id/56/1920/400"
+                class="w-100 d-block"
+                alt="First slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Title</h3>
+                <p>Description</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="https://picsum.photos/id/167/1920/400"
+                class="w-100 d-block"
+                alt="Second slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Title</h3>
+                <p>Description</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="https://picsum.photos/id/68/1920/400"
+                class="w-100 d-block"
+                alt="Third slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Title</h3>
+                <p>Description</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Použití gridu a cards -->
+
+      <section id="herci" class="fluid">
+        <header class="bg-warning p-3 text-center">
+          <h2>Profily herců</h2>
+        </header>
+        <main class="p-5">
+        <div class="row">
+          <div class="col-xl-2 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://picsum.photos/id/2/600/600" class="card-img-top" alt="Fotka herce">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://picsum.photos/id/3/600/600" class="card-img-top" alt="Fotka herce">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://picsum.photos/id/4/600/600" class="card-img-top" alt="Fotka herce">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://picsum.photos/id/5/600/600" class="card-img-top" alt="Fotka herce">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://picsum.photos/id/6/600/600" class="card-img-top" alt="Fotka herce">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://picsum.photos/id/7/600/600" class="card-img-top" alt="Fotka herce">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      </section>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      const carousel = document.getElementById('carouselId')
+      const nadpis = document.querySelector('.navbar-light')
+
+      function nahodnaBarva() {
+        let r = Math.floor(Math.random() * 255)
+        let g = Math.floor(Math.random() * 255)
+        let b = Math.floor(Math.random() * 255)
+        return `rgb(${r},${g},${b})`
+      }
+
+      carousel.addEventListener('slide.bs.carousel', function () {
+        console.log(nahodnaBarva())
+        nadpis.style.setProperty(
+          'background-color',
+          nahodnaBarva(),
+          'important'
+        )
+      })
+    </script>
+  </body>
+</html>
