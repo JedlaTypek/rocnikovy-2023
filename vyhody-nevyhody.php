@@ -3,7 +3,7 @@
     $siteTitle = "Výhody a nevýhody | Oracle cloud";
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <?php include_once "head.php" ?>
 <body>
     <?php include_once "header.php"?>
